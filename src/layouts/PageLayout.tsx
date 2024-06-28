@@ -94,7 +94,7 @@ const PageLayout: React.FC<PageLayoutProps> = ({ children, name }) => {
       }
     };
     return (
-      <CustomModal open={openPassModal} onClose={confirmPassword}>
+      <CustomModal open={false} onClose={confirmPassword}>
         <Box className='devPassModal'>
           <p>Please input password to access dev site.</p>
           <input
