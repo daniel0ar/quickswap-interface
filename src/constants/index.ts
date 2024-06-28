@@ -65,6 +65,7 @@ export const AVERAGE_L1_BLOCK_TIME = 12000;
 export const merklAMMs: { [chainId in ChainId]?: string[] } = {
   [ChainId.MATIC]: ['quickswapalgebra'],
   [ChainId.ZKEVM]: ['quickswapalgebra', 'quickswapuni'],
+  [ChainId.LAYERX]: ['quickswapalgebra'],
 };
 
 export const blackListMerklFarms: { [chainId in ChainId]?: string[] } = {
@@ -2317,6 +2318,10 @@ export const IchiVaults: {
     '0xb5a4B8d3c8F88a25801aF460f52fEc639403534f',
     '0x2ED64d3De2A2c060FF4b31e9B2f9268ADcE7e671',
     '0x6fD4058ED78608F3C613585EEa222F6F5480e0D5',
+  ],
+  [ChainId.ZKEVM]: [
+    '0x423382e084f1d1d180bec638bc64cc6408896c3c',
+    '0xb4eac29e630e38133e015ad17e3986886d5e8b35',
   ],
 };
 
